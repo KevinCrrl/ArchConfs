@@ -30,6 +30,7 @@
         <enabled>yes</enabled>
       </startupnotify>
     </action>
+  </item>
 </menu>
 
 <menu id="apps-net-menu" label="Internet">

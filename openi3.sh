@@ -13,4 +13,4 @@ xinput set-prop "SYNA32AC:00 06CB:CD50 Touchpad" "libinput Natural Scrolling Ena
 xinput set-prop "SYNA32AC:00 06CB:CD50 Touchpad" "libinput Accel Profile Enabled" 0
 
 # Aplicar mi compositor picom
-picom --config ~/.config/picom/picom.conf
+picom --config ~/.config/picom/picom.conf &

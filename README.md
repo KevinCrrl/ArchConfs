@@ -15,3 +15,7 @@ En este repositorio almaceno mis configuraciones e imágenes que uso en mis pers
 - .vimrc: ~/.vimrc
 - .ycm_extra_conf.py: ~/.vim/.ycm_extra_conf.py
 - menu.xml: ~/.config/openbox/menu.xml
+
+## El archivo autocopia.py
+
+Este archivo no tiene una ubicación real dentro del sistema, ya que realmente no es un archivo de configuración, sino un script que me ayuda a encontrar cambios que haya realizado en los archivos originales, para posteriormente, si encuentra un cambio, copie el archivo con cambios a la carpeta de este repositorio, así me ahorro tener que recordar o adivinar en que archivos he hecho cambios y me ahorra tiempo, en especial cuando tenga más archivos de configuración.

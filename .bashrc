@@ -8,6 +8,8 @@ alias myfetch="fastfetch --logo-type kitty --logo-width 50 --logo /home/Kevin/Im
 alias NewYear="curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/refs/heads/master/tree-ES.sh | bash"
 alias bbrillo="exec brightnessctl s 10%- &"
 alias sbrillo="exec brightnessctl s 10%+ &"
+alias build-uaspl="pyinstaller --onefile --add-data "$(python -c 'import pyfiglet, os; print(os.path.dirname(pyfiglet.__file__) + "/fonts")'):pyfiglet/fonts" UASPL.py
+"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

@@ -2,6 +2,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'ycm-core/YouCompleteMe'
 Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
+Plug 'vim-scripts/bash-support.vim'
 call plug#end()
 
 " Evitar mensajes molestos
@@ -40,4 +41,7 @@ let g:ale_linters = {
 \   'java': ['checkstyle'],
 \}
 
+let g:ale_python_flake8_options = '--ignore=E501'
 
+filetype plugin on
+filetype indent on

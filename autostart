@@ -17,7 +17,7 @@
 #xfce-mcs-manager &
 
 # Barra de tareas
-tint2 &
+xfce4-panel &
 
 # Ejecutar mi SH
 bash ~/.config/konfigsnk/openi3.sh

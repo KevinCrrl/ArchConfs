@@ -3,6 +3,8 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'jiangmiao/auto-pairs'
 Plug 'dense-analysis/ale'
 Plug 'vim-scripts/bash-support.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Evitar mensajes molestos
@@ -45,3 +47,12 @@ let g:ale_python_flake8_options = '--ignore=E501'
 
 filetype plugin on
 filetype indent on
+
+" Config para gitgutter
+
+let g:gitgutter_enabled = 1
+let g:gitgutter_map_keys = 0
+
+let g:gitgutter_sign_added = 'A'
+let g:gitgutter_sign_modified = 'M'
+let g:gitgutter_sign_removed = 'R'

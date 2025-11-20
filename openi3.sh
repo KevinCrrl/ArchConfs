@@ -3,8 +3,8 @@
 # Mi teclado en idioma español pero de latam
 setxkbmap -layout latam
 
-# Restaurar mi fondo de pantalla
-nitrogen --restore &
+# Aplicar mi fondo de pantalla
+feh --bg-scale /home/Kevin/Descargas/fondo_animado.jpg &
 
 # Config del touchpad
 xinput set-prop "SYNA32AC:00 06CB:CD50 Touchpad" "libinput Tapping Enabled" 1

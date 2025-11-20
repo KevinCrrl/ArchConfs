@@ -56,3 +56,8 @@ let g:gitgutter_map_keys = 0
 let g:gitgutter_sign_added = 'A'
 let g:gitgutter_sign_modified = 'M'
 let g:gitgutter_sign_removed = 'R'
+
+" otras configs
+set mouse=a
+" set spell
+" set spelllang=es

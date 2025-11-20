@@ -15,7 +15,8 @@ archivos = {
     "~/.config/openbox/menu.xml": "~/ArchConfs/menu.xml",
     "~/.config/i3/config": "~/ArchConfs/config",
     "~/.vim/.ycm_extra_conf.py": "~/ArchConfs/.ycm_extra_conf.py",
-    "~/banner.py": "~/ArchConfs/banner.py"
+    "~/banner.py": "~/ArchConfs/banner.py",
+    "~/.config/openbox/rc.xml": "~/ArchConfs/rc.xml"
 }
 
 for original, copia in archivos.items():

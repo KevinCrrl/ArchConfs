@@ -2,33 +2,44 @@
 # ~/.bashrc
 #
 
-# Mis personalizaciones xd
 python ~/banner.py
-alias myfetch="fastfetch --logo-width 50 --logo /home/Kevin/Imágenes/arch.png"
+
+# ====================== Funciones de programas ================================
+sherlock() {
+    proxychains4 -q curl ifconfig.me
+    sleep 3 # Tiempo para cancelar si la IP de proxy es incorrecta
+    proxychains4 -q sherlock "$@"
+}
+# ==============================================================================
+
+# ========================== ALIAS =============================================
+
+alias archfetch="fastfetch --logo-width 50 --logo /home/Kevin/Imágenes/arch.png"
 alias NewYear="curl https://raw.githubusercontent.com/sergiolepore/ChristBASHTree/refs/heads/master/tree-ES.sh | bash"
 alias bbrillo="exec brightnessctl s 10%- &"
 alias sbrillo="exec brightnessctl s 10%+ &"
-alias newmirrors="sudo reflector --verbose --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+
 alias cursor-fix="gsettings set org.gnome.desktop.interface cursor-size 32"
-
-# alias de seguridad
-
+alias holehe="proxychains4 holehe"
 alias rm='rm -i --preserve-root'
 alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
 
+alias chmod='chmod --preserve-root'
 alias ln='ln -i'
 alias mkdir='mkdir -p -v'
+alias cd='z'
+
+alias ls='lsd --color=auto -a'
+alias grep='grep --color=auto'
+alias aide-db='sudo cp /var/lib/aide/aide.db.new.gz /var/lib/aide.db.gz'
+
+# ==============================================================================
 
 # Configuración para GPG en entornos gráficos incompletos
 export GPG_TTY=$(tty)
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
-alias cd='z'
-alias ls='lsd --color=auto -a'
-alias grep='grep --color=auto'
 
 GREEN="\[$(tput setaf 2)\]"
 RESET="\[$(tput sgr0)\]"
